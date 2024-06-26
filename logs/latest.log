@@ -1,0 +1,11 @@
+[14:47:10] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[14:47:10] [ServerMain/ERROR]: Failed to start the minecraft server
+net.minecraft.util.DirectoryLock$LockException: /workspaces/minecraft-server/./world/session.lock: already locked (possibly by other Minecraft instance?)
+	at net.minecraft.util.DirectoryLock$LockException.alreadyLocked(DirectoryLock.java:100) ~[purpur-1.20.6.jar:1.20.6-2233-0d6766e]
+	at net.minecraft.util.DirectoryLock.create(DirectoryLock.java:30) ~[purpur-1.20.6.jar:1.20.6-2233-0d6766e]
+	at net.minecraft.world.level.storage.LevelStorageSource$LevelStorageAccess.<init>(LevelStorageSource.java:522) ~[purpur-1.20.6.jar:1.20.6-2233-0d6766e]
+	at net.minecraft.world.level.storage.LevelStorageSource.validateAndCreateAccess(LevelStorageSource.java:428) ~[purpur-1.20.6.jar:1.20.6-2233-0d6766e]
+	at net.minecraft.server.Main.main(Main.java:203) ~[purpur-1.20.6.jar:1.20.6-2233-0d6766e]
+	at org.bukkit.craftbukkit.Main.main(Main.java:336) ~[purpur-1.20.6.jar:1.20.6-2233-0d6766e]
+	at io.papermc.paperclip.Paperclip.lambda$main$0(Paperclip.java:42) ~[app:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
